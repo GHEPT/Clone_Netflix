@@ -13,22 +13,22 @@
 
 /* Importando fonte */
 @font-face {
-    font-family: bebas;
-    src: url(/font/bebas-neue/BebasNeue.otf);
+    font-family: "bebas";
+    src: url(/font/bebas-neue/BebasNeue.otf);    
 }
 
 /* Box que abraça todo o site */
 header.container{
     display: flex;
     align-items: center;
-    background-color: transparent;
+    background-image: linear-gradient(to bottom, black,transparent);
     padding: 0px 4%;
     justify-content: space-between;
 }
 
 a.logo{
     color: var(--vermelha);
-    font-family: bebas;
+    font-family: "bebas";
     font-size: 2rem;
     letter-spacing: .12rem;
     font-weight: lighter;
@@ -39,13 +39,19 @@ a.logo{
 
 /* Textos do menu de navegação */
 header ul.nav-list{
-    margin-left: 2.2rem;
+    margin-left: 2.5rem;
+    font-size: .85rem;
 }
 
 .menu-navigation{
     display: flex;
     align-items: center;
     height: 68px;
+}
+
+.selected{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Lista não ordenada do header */
@@ -102,7 +108,76 @@ header button span img{
 
 body{
     background-color: var(--preta);
+    background-image: url(/img/Maid_Fundo.jpg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 13px;
     letter-spacing: 0rem;
+    color: #fff;
+}
+
+/* MAIN */
+main .container{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    padding: 0px 4%;
+    justify-content: space-between;
+    max-width: 44%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 7%;
+}
+
+.titulo{
+    font-family: Agency FB;
+    font-size: 12rem;
+}
+
+.descricao{
+    font-size: 1.1rem;
+    text-shadow: #333131 0.1em 0.1em 0.3em;
+    line-height: 135%;
+    margin-top: -20px;
+}
+
+.botoes{
+    display: flex;
+    align-items: center;
+    padding: 0px 4%;
+}
+
+.botao-assistir, .botao-informacoes{
+    padding: .7% 2%;
+    border-radius: 4px;
+    border: transparent;
+    margin-right: 1%;
+    margin-top: 1.5%;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: .5px;
+    font-family: Calibri;
+}
+
+.botao-assistir{
+    background-color: white;
+}
+
+.botao-assistir:hover{
+    background-color: rgba(255, 255, 255, .8)
+}
+
+.botao-informacoes{
+    background: rgba(114, 118, 120, 0.75);
+    color: white;
+}
+
+.botao-informacoes:hover{
+    background-color: rgba(114, 118, 120, 0.45);
+
+}
+
+.fas{
+    padding-right: 10px;
 }
