@@ -18,6 +18,16 @@
 }
 
 /* Box que abraça todo o site */
+
+header{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
 header.container{
     display: flex;
     align-items: center;
@@ -30,8 +40,8 @@ a.logo{
     color: var(--vermelha);
     font-family: "bebas";
     font-size: 2rem;
-    letter-spacing: .12rem;
-    font-weight: lighter;
+    letter-spacing: .14rem;
+    font-weight: 600;
     text-decoration: none;
     margin-right: 5px;
     margin-top: 5.5px;
@@ -108,7 +118,7 @@ header button span img{
 
 body{
     background-color: var(--preta);
-    background-image: url(/img/Maid_Fundo.jpg);
+    background-image: linear-gradient(to bottom, transparent 55%, black 70%), url(/img/Maid_Fundo.jpg);
     background-size: 100vw;
     background-repeat: no-repeat;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -128,6 +138,10 @@ main .container{
     flex-direction: column;
     align-items: flex-start;
     margin-top: 7%;
+}
+
+.filme-principal{
+    margin-top: 9.5%;
 }
 
 .titulo{
@@ -180,4 +194,45 @@ main .container{
 
 .fas{
     padding-right: 10px;
+}
+
+.box-filme{
+    height: 60%;
+    width: 60%;
+    display: block;
+}
+
+.owl-stage{
+    margin-left: 4%;
+}
+
+.sub-titulo1{
+    margin: 7.5% 0% .8% 4%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: #333131 0.1em 0.1em 0.3em;
+    color: #E5E5E5;
+}
+
+/* Ativando cor no header */
+.enable{
+    background-color: #0F0F0F;
+    transition: ease-in-out .4s;
+}
+
+.item::before{
+    content: url(/img/netflix_logo_icon_22px.png);
+    position: absolute;
+    top: 4%;
+    left: 1%;
+}
+
+.sub-titulo2{
+    margin: 1% 0% .8% 4%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: #333131 0.1em 0.1em 0.3em;
+    color: #E5E5E5;
 }
