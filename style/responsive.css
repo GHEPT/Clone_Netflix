@@ -3,18 +3,74 @@
         display: flex;
         flex-direction: column;
     }
+
+    .botao-assistir{
+        width: 22%;
+        padding: 1.5%;
+        font-size: 110%;
+    }
+
+    .botao-informacoes{
+        width: 40%;
+        padding: 1.4%;
+        font-size: 120%;
+    }
+
+    .descricao{
+        width: 180%;
+        font-size: 100%;
+        padding-top: 6%;
+    }
+
+    .titulo{
+        font-size: 800%;
+    }
+
+    .secondary-navigation{
+        display: flex;
+        position: absolute;
+        top: 17%;
+        right: 5%;
+    }
+
+    .show-kids a{
+        display: none;
+    }
+
+    header li a{
+        display: none;
+    }
+
+    header a.logo{
+        font-size: 130%;
+        position:absolute;
+        top: 15%;
+        left: 5%;
+    }
+
+    header li a.navegar{
+        display: inline-block;
+    }
+
+    i span{
+        font-size: 8px;
+        margin-top: .6%;
+        padding-left: 1%;
+    }
+
+    .box p{
+        font-size: 50%;
+    }
+
+    .box{
+        margin-right: 14%;
+        padding-right: 10%;
+        width: 20%;
+    }
 }
 
-@media (max-width: 880px){
-    .navigation-menu{
-        position: absolute;
-        top: 8vh;
-        right: 0;
-        width: 30vw;
-        height: 92vh;
-        background: #e5e5e5;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
+@media screen and (min-width: 1000px){
+    .descricao{
+        width: 50%;
     }
 }
