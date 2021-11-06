@@ -26,6 +26,7 @@ header{
     top: 0;
     left: 0;
     width: 100vw;
+    z-index: 2;
 }
 
 header.container{
@@ -57,6 +58,10 @@ header ul.nav-list{
     display: flex;
     align-items: center;
     height: 68px;
+}
+
+.navigation-menu{
+    display: none;
 }
 
 .selected{
@@ -118,7 +123,7 @@ header button span img{
 
 body{
     background-color: var(--preta);
-    background-image: linear-gradient(to bottom, transparent 55%, black 70%), url(/img/Maid_Fundo.jpg);
+    background-image: linear-gradient(to bottom, transparent 50%, black 55%), url(/img/Maid_Fundo.jpg);
     background-size: 100vw;
     background-repeat: no-repeat;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -179,7 +184,8 @@ main .container{
 }
 
 .botao-assistir:hover{
-    background-color: rgba(255, 255, 255, .8)
+    background-color: rgba(255, 255, 255, .8);
+    cursor: pointer;
 }
 
 .botao-informacoes{
@@ -189,6 +195,7 @@ main .container{
 
 .botao-informacoes:hover{
     background-color: rgba(114, 118, 120, 0.45);
+    cursor: pointer;
 
 }
 
@@ -200,6 +207,10 @@ main .container{
     height: 60%;
     width: 60%;
     display: block;
+}
+
+.box-filme:hover{
+    cursor: pointer;
 }
 
 .owl-stage{
@@ -235,4 +246,63 @@ main .container{
     font-weight: bold;
     text-shadow: #333131 0.1em 0.1em 0.3em;
     color: #E5E5E5;
+}
+
+/* footer */
+.redes{
+    margin-left: 14%;
+    margin-top: 5.5%;
+}
+
+.redes i{
+    color: #808080;
+    padding-right: 1%;
+    margin-bottom: .6%;
+}
+
+.redes i, button.botao-footer{
+    cursor: pointer;
+}
+
+.hiperlinks{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 14%;
+    margin-right: 20%;
+    line-height: 250%;
+}
+
+.box p{
+    color: #808080;
+    font-size: 12px;
+}
+
+.box p:hover{
+    text-decoration: underline;
+    transition: ease 1s;
+    cursor: pointer;
+}
+
+.botao-footer{
+    color: #808080;
+    background: transparent;
+    border: #808080 solid 1px;
+    border-radius: 2px;
+    padding: 6px;
+    margin-left: 14%;
+    margin-top: 1.5%;
+}
+
+.copyright span, .copyright i{
+    color: #808080;
+}
+
+.copyright i{
+    display: flex;
+    margin: 1.5% 20% 2% 14%;
+    font-size: 11px;
+}
+
+i span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
